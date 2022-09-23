@@ -1,0 +1,36 @@
+2022-09-09T01:45:43+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::is_on_sele() in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\index.php:62
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\index.php on line 62
+
+2022-09-09T01:46:07+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::is_on_sele() in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\index.php:62
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\index.php on line 62
+
+2022-09-09T01:46:53+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::is_on_sele() in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\index.php:62
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\index.php on line 62
+
+2022-09-09T02:15:31+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\template\itemcontent.php:5
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-includes\template.php(772): require()
+#1 C:\xampp\htdocs\wp_woo\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\wp_woo\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\index.php(56): get_template_part('template/itemco...')
+#4 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\template\itemcontent.php on line 5
+

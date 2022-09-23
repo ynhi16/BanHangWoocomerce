@@ -1,0 +1,2 @@
+2022-09-12T09:16:20+00:00 CRITICAL syntax error, unexpected 'do_action' (T_STRING), expecting ';' or ',' in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\woocommerce\archive-product.php on line 29
+
