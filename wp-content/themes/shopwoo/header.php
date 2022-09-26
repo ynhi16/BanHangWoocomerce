@@ -81,11 +81,11 @@
                             <a href="<?php bloginfo('url') ?>/gio-hang" class="icon-cart">
                                 <div class="icon">
                                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    <span>3</span>
+                                    <span><?php echo WC()->cart->get_cart_contents_count(); ?></span>
                                 </div>
                                 <div class="info-cart">
                                     <p>Giỏ hàng</p>
-                                    <span>2.500.000đ</span>
+                                    <span><?php wc_cart_totals_subtotal_html(); ?></span>
                                 </div>
                                 <span class="clear"></span>
                             </a>

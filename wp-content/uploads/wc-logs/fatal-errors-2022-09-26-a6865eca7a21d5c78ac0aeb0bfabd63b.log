@@ -1,0 +1,75 @@
+2022-09-26T09:06:46+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\functions.php:223
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php(84): totalQuantity()
+#1 C:\xampp\htdocs\wp_woo\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp_woo\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#3 C:\xampp\htdocs\wp_woo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\page-full-width.php(7): get_header()
+#5 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\functions.php on line 223
+
+2022-09-26T09:14:02+00:00 CRITICAL Uncaught Error: Call to undefined function number() in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\functions.php:228
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php(84): totalQuantity()
+#1 C:\xampp\htdocs\wp_woo\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp_woo\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#3 C:\xampp\htdocs\wp_woo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\page-full-width.php(7): get_header()
+#5 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\functions.php on line 228
+
+2022-09-26T09:18:40+00:00 CRITICAL Uncaught Error: Call to a member function get_stock_managed_by_id() on null in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\functions.php:229
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php(84): totalQuantity()
+#1 C:\xampp\htdocs\wp_woo\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp_woo\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#3 C:\xampp\htdocs\wp_woo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\page-full-width.php(7): get_header()
+#5 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\functions.php on line 229
+
+2022-09-26T09:34:47+00:00 CRITICAL Uncaught Error: Call to undefined function hk_get_thumb() in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php:94
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wp_woo\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wp_woo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\page-full-width.php(7): get_header()
+#4 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php on line 94
+
+2022-09-26T09:38:00+00:00 CRITICAL Uncaught Error: Call to undefined function hk_get_thumb() in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php:105
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wp_woo\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wp_woo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\page-full-width.php(7): get_header()
+#4 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php on line 105
+
+2022-09-26T09:38:26+00:00 CRITICAL Uncaught Error: Call to undefined function hk_get_thumb() in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php:105
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wp_woo\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wp_woo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\page-full-width.php(7): get_header()
+#4 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php on line 105
+

@@ -77,6 +77,13 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0"
     nonce="0vDk8fvv"></script>
+<!-- <script>
+jQuery(function($) {
+    $('.woocommerce').on('change', 'input.qty', function() {
+        $("[name='update_cart']").trigger("click");
+    });
+});
+</script> -->
 <?php wp_footer() ?>
 </body>
 

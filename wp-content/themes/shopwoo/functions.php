@@ -152,8 +152,9 @@ function precentSale($price, $priceSale){
 function my_custom_wc_theme_support() {
     add_theme_support( 'woocommerce' );
 }
-//add_action( 'after_setup_theme', 'my_custom_wc_theme_support' );
-//add_action('woocommerce_after_shop_loop_item_title','change_loop_ratings_location', 2 );
+add_action( 'after_setup_theme', 'my_custom_wc_theme_support' );
+
+// add_action('woocommerce_after_shop_loop_item_title','change_loop_ratings_location', 2 );
 // function change_loop_ratings_location(){
 //     remove_action('woocommerce_after_shop_loop_item_title','woocommerce_template_loop_rating', 5 );
 //     add_action('woocommerce_after_shop_loop_item_title','woocommerce_template_loop_rating', 15 );
@@ -170,3 +171,77 @@ function my_custom_wc_theme_support() {
 //     }
 //     return $html;
 // }
+
+// function kenthan_remove_product_tabs( $tabs ) {
+// 	unset( $tabs['additional_information'] );
+// 	return $tabs;
+// }
+// add_filter( 'woocommerce_product_tabs', 'kenthan_remove_product_tabs', 98 );
+
+// Nổi bật
+// archive
+// add_action( 'woocommerce_before_shop_loop_item_title', 'hk_product_featured_badge', 10 );
+// function hk_product_featured_badge() {
+//     global $product;
+    
+//     // Is a WC product
+//     if ( is_a( $product, 'WC_Product' ) ) {
+//         // Get productID
+//         $product_id = $product->get_id();
+        
+//         // Returns an array containing the IDs of the featured products.
+//         $featured_product_ids = wc_get_featured_product_ids();
+        
+//         // Checks if a value exists in an array
+//         if ( in_array( $product_id, $featured_product_ids ) ) {
+//             echo '<span class="featured-badge">Nổi bật</span>';
+//         } 
+//     }
+// }
+
+// single product page
+add_action( 'woocommerce_single_product_summary', 'hk_single_product_featured_badge', 1 );
+function hk_single_product_featured_badge() {
+    global $product;
+    
+    // Is a WC product
+    if ( is_a( $product, 'WC_Product' ) ) {
+        // Get productID
+        $product_id = $product->get_id();
+        
+        // Returns an array containing the IDs of the featured products.
+        $featured_product_ids = wc_get_featured_product_ids();
+        
+        // Checks if a value exists in an array
+        if ( in_array( $product_id, $featured_product_ids ) ) {
+            echo '<span class="featured1">Nổi bật</span>';
+        } 
+    }
+}
+function totalQuantity() {
+// 	global $woocommerce;
+//     $items = $woocommerce->cart->get_cart();
+ 
+//         foreach($items as $item => $values) { 
+//             $_product = $values['data']->post; 
+// 			$total = 0;
+// 			echo $values['quantity'];
+
+//         	$total += (int)$values['quantity']; 
+//             echo $total;
+//         } 
+	foreach ( WC()->cart->get_cart() as $cart_item ) {  
+		$quantity =  $cart_item['quantity'];
+		echo $quantity;
+	}
+}
+
+add_filter( 'woocommerce_add_to_cart_fragments', 'iconic_cart_count_fragments', 10, 1 );
+
+function iconic_cart_count_fragments( $fragments ) {
+    
+    $fragments['div.header-cart-count'] = '<div class="header-cart-count">' . WC()->cart->get_cart_contents_count() . '</div>';
+    
+    return $fragments;
+    
+}
