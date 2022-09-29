@@ -73,3 +73,15 @@ Stack trace:
 #7 {main}
   thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php on line 105
 
+2022-09-26T09:55:31+00:00 CRITICAL Uncaught Error: Call to undefined function hk_get_thumb() in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php:124
+Stack trace:
+#0 C:\xampp\htdocs\wp_woo\wp-includes\template.php(770): require_once()
+#1 C:\xampp\htdocs\wp_woo\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\wp_woo\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\page-full-width.php(7): get_header()
+#4 C:\xampp\htdocs\wp_woo\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wp_woo\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wp_woo\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wp_woo\wp-content\themes\shopwoo\header.php on line 124
+

@@ -39,8 +39,8 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <div class="box-footer info-contact">
-                    <h3>Form liên hệ</h3>
-                    <div class="content-contact">
+                    <!-- <h3>Form liên hệ</h3> -->
+                    <!-- <div class="content-contact">
                         <form action="/" method="GET" role="form">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -61,14 +61,15 @@
                             </div>
                             <button type="submit" class="btn-contact">Liên hệ ngay</button>
                         </form>
-                    </div>
+                    </div> -->
+                    <?php echo do_shortcode('[contact-form-7 id="11" title="Form liên hệ 1"]');?>
                 </div>
             </div>
         </div>
     </div>
-    <div class="copyright">
+    <!-- <div class="copyright">
         <p>Copyright © 2020 HKSHOP All Rights Reserved - Design by THIETKEWEB43.COM</p>
-    </div>
+    </div> -->
 </footer>
 </div>
 <script src="<?php bloginfo('template_directory')?>/libs/jquery-3.4.1.min.js"></script>
