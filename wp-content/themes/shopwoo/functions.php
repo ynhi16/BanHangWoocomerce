@@ -245,3 +245,21 @@ function iconic_cart_count_fragments( $fragments ) {
     return $fragments;
     
 }
+
+function catalogue_mode_for_logged_out_users() {
+	$isLoggedIn = is_user_logged_in();
+	if ( false == $isLoggedIn ) {
+	    remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );	
+	}
+}
+add_action( 'wp', 'catalogue_mode_for_logged_out_users' );
+
+// Makes add to available for logged in users
+add_filter( 'woocommerce_is_purchasable', 'keep_add_to_cart_button', 10, 2 );
+function keep_add_to_cart_button( $is_purchasable, $product ) {
+	$isLoggedIn = is_user_logged_in();
+	if ( true == $isLoggedIn ) {
+		return true;
+	}
+	return false;
+}

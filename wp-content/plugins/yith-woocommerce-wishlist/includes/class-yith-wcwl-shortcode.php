@@ -741,7 +741,7 @@ if ( ! class_exists( 'YITH_WCWL_Shortcode' ) ) {
 				 *
 				 * @return string
 				 */
-				$label = apply_filters( 'yith_wcwl_remove_from_wishlist_label', __( 'Remove from list', 'yith-woocommerce-wishlist' ) );
+				$label = apply_filters( 'yith_wcwl_remove_from_wishlist_label', __( 'Xóa khỏi yêu thích', 'yith-woocommerce-wishlist' ) );
 			}
 
 			// prevent button appearance when we're in loop, over image.

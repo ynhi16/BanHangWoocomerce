@@ -200,7 +200,7 @@ if ( ! class_exists( 'YITH_WCWL_Ajax_Handler' ) ) {
 				 *
 				 * @return string
 				 */
-				$message = apply_filters( 'yith_wcwl_product_removed_text', __( 'Product successfully removed.', 'yith-woocommerce-wishlist' ) );
+				$message = apply_filters( 'yith_wcwl_product_removed_text', __( 'Xóa sản phẩm yêu thích thành công.', 'yith-woocommerce-wishlist' ) );
 			} catch ( Exception $e ) {
 				$message = $e->getMessage();
 			}
@@ -369,10 +369,10 @@ if ( ! class_exists( 'YITH_WCWL_Ajax_Handler' ) ) {
 			yith_wcwl_add_notice( $message, $type_msg );
 
 			?>
-			<div>
-				<?php echo YITH_WCWL_Shortcode::wishlist( $atts ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-			</div>
-			<?php
+<div>
+    <?php echo YITH_WCWL_Shortcode::wishlist( $atts ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+</div>
+<?php
 
 			die();
 
